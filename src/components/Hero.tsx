@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-dark-gray"
+      className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-dark-gray"
     >
       {/* Background Slideshow with AnimatePresence */}
       <div className="absolute inset-0 z-0">
