@@ -95,12 +95,14 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden p-2 focus:outline-none ${
-            isScrolled || isOpen ? "text-dark-gray" : "text-white"
+          className={`md:hidden flex items-center justify-center w-11 h-11 rounded-xl transition-all duration-200 active:scale-95 focus:outline-none ${
+            isScrolled || isOpen
+              ? "bg-dark-gray/5 border border-dark-gray/10 text-dark-gray hover:bg-dark-gray/10"
+              : "bg-white/10 border border-white/15 text-white backdrop-blur-md hover:bg-white/20"
           }`}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
