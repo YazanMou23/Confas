@@ -129,7 +129,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer Section */}
-      <div className="border-t border-gray-800 py-6">
+      <div className="border-t border-gray-800 py-6 pb-[calc(1.5rem+76px)] md:pb-6">
         <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>© {new Date().getFullYear()} CONWAS. Alle Rechte vorbehalten.</p>
           <div className="flex items-center gap-6">
