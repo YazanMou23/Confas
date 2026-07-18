@@ -47,14 +47,14 @@ export default function FloatingContact() {
       </div>
 
       {/* Mobile Downbar (Left: Calling, Right: WhatsApp Chat) */}
-      <div className="flex md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-t border-gray-100 px-5 py-4 gap-4 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] pb-[calc(16px+env(safe-area-inset-bottom))]">
+      <div className="flex md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-t border-gray-100 px-4 py-2.5 gap-3 shadow-[0_-8px_30px_rgba(0,0,0,0.06)] pb-[calc(10px+env(safe-area-inset-bottom))]">
         {/* Left: Call */}
         <a
           href="tel:00492032988333"
-          className="flex-1 flex items-center justify-center gap-2.5 bg-primary-blue hover:bg-blue-800 active:bg-blue-900 text-white py-3.5 px-4 rounded-xl font-bold shadow-lg shadow-primary-blue/10 active:scale-[0.98] transition-all text-center text-[15px]"
+          className="flex-1 flex items-center justify-center gap-1.5 bg-primary-blue hover:bg-blue-800 active:bg-blue-900 text-white py-2.5 px-3 rounded-lg font-bold shadow-sm shadow-primary-blue/5 active:scale-[0.98] transition-all text-center text-xs"
           aria-label="Telefon Anruf"
         >
-          <Phone size={18} className="fill-white/10" />
+          <Phone size={14} className="fill-white/10" />
           <span>Jetzt Anrufen</span>
         </a>
 
@@ -63,10 +63,10 @@ export default function FloatingContact() {
           href="https://wa.me/4915115655421"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] active:bg-[#1da850] text-white py-3.5 px-4 rounded-xl font-bold shadow-lg shadow-green-500/10 active:scale-[0.98] transition-all text-center text-[15px]"
+          className="flex-1 flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] active:bg-[#1da850] text-white py-2.5 px-3 rounded-lg font-bold shadow-sm shadow-green-500/5 active:scale-[0.98] transition-all text-center text-xs"
           aria-label="WhatsApp Chat"
         >
-          <MessageSquare size={18} className="fill-white/10" />
+          <MessageSquare size={14} className="fill-white/10" />
           <span>WhatsApp Chat</span>
         </a>
       </div>
